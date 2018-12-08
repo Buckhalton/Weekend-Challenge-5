@@ -15,8 +15,7 @@ class PageTwo extends Component {
             <option value="4">4</option>
             <option value="5">5</option>
         </select>
-        <button><Link to="/3">Submit</Link></button>        
-        <Feedback/>
+        <button><Link to="/3">Next</Link></button>        
       </div>
     );
   }

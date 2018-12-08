@@ -10,7 +10,6 @@ class PageFour extends Component {
         <h1>How are you feeling today?</h1>
             <input type="text" placeholder="Any comments?" name="comments"/>
         <button><Link to="/">Submit</Link></button>
-        <Feedback/>
       </div>
     );
   }

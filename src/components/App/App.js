@@ -22,6 +22,7 @@ class App extends Component {
             <Route path="/2" component={PageTwo}/>
             <Route path="/3" component={PageThree}/>
             <Route path="/4" component={PageFour}/>
+            <Feedback/>
           </div>
         </Router>
       </div>

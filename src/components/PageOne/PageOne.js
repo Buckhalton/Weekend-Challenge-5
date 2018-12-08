@@ -15,8 +15,7 @@ class PageOne extends Component {
             <option value="4">4</option>
             <option value="5">5</option>
         </select>
-        <button><Link to="/2">Submit</Link></button>
-        <Feedback/>
+        <button><Link to="/2">Next</Link></button>
       </div>
     );
   }
