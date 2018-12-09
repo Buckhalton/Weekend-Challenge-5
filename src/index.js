@@ -17,29 +17,26 @@ const feedbackData = (state = {feeling: 0, understanding: 0, support: 0, comment
         case 'ADD_UNDERSTANDING':
         return {
             ...state, 
-            feeling: action.payload
+            understanding: action.payload
         };
         case 'ADD_SUPPORT':
         return {
             ...state, 
-            feeling: action.payload
+            support: action.payload
         };
         case 'ADD_COMMENTS':
         return {
             ...state, 
-            feeling: action.payload
+            comments: action.payload
         };
+        case 'CLEAR':
+        return state = {feeling: 0, understanding: 0, support: 0, comments: ''};
+        default:
+        return state;
     }
-    // return {
-    //     ...state,
-    //     [action.payload.key]: action.payload.value
-    // };
 }
 
-// ({type: 'ADD_DATA', payload: {
-//     key: pageOne,
-//     value: 14238114
-// }})
+
 
 
 const store = createStore(
