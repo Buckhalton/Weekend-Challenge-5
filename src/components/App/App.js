@@ -8,6 +8,7 @@ import PageFour from '../PageFour/PageFour';
 import Header from '../Header/Header';
 import {HashRouter as Router, Route, Link} from 'react-router-dom';
 import {connect} from 'react-redux';
+import ThankYou from '../ThankYou/ThankYou';
 
 class App extends Component {
   render() {
@@ -16,12 +17,13 @@ class App extends Component {
         <Header/>
         <Router>
           <div>
-          <button><Link to="/1">FeedBack Start</Link></button>
             <Route path="/1" component={PageOne}/>
             <Route path="/2" component={PageTwo}/>
             <Route path="/3" component={PageThree}/>
             <Route path="/4" component={PageFour}/>
+            <Route path="/thankyou" component={ThankYou}/>
             <Feedback/>
+            <button><Link to="/1">New Feedback</Link></button>
           </div>
         </Router>
       </div>
