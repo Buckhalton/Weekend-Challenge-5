@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import { Link, withRouter } from 'react-router-dom';
+import Feedback from '../Feedback/Feedback';
 
 class PageTwo extends Component {
     state = {
@@ -30,7 +31,8 @@ class PageTwo extends Component {
             <option value="4">4</option>
             <option value="5">5</option>
         </select>
-        <button onClick={this.sendToRedux}><Link to="/3">Next</Link></button>        
+        <button onClick={this.sendToRedux}><Link to="/3">Next</Link></button>
+        <Feedback/>        
       </div>
     );
   }

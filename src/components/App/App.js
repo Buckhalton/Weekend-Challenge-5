@@ -24,7 +24,6 @@ class App extends Component {
             <Route path="/4" component={PageFour}/>
             <Route path="/5" component={ThankYou}/>
             <Route path="/admin" component={AdminPage}/>
-            <Feedback/>
             <button><Link to="/1">New Feedback</Link></button>
           </div>
         </Router>

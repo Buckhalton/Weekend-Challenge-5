@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import { Link, withRouter } from 'react-router-dom';
+import Feedback from '../Feedback/Feedback';
 
 class PageFour extends Component {
     state = {
@@ -23,6 +24,7 @@ class PageFour extends Component {
         <h1>Do you have any additional comments?</h1>
             <input onChange={this.changeState} type="text" placeholder="Any comments?" name="comments"/>
         <button onClick={this.sendToRedux}><Link to="/5">Finish</Link></button>
+        <Feedback/>
       </div>
     );
   }
