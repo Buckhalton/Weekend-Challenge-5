@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 import './App.css';
 import Feedback from '../Feedback/Feedback';
 import PageOne from '../PageOne/PageOne';
@@ -22,6 +21,7 @@ class App extends Component {
             <Route path="/2" component={PageTwo}/>
             <Route path="/3" component={PageThree}/>
             <Route path="/4" component={PageFour}/>
+            <Feedback/>
           </div>
         </Router>
       </div>
