@@ -21,6 +21,30 @@ app.post('/feedback', (req, res) => {
     })
 })
 
+app.get('/feedback', (req, res) => {
+    pool.query('SELECT * FROM "feedback";')
+    .then(result => {
+        res.send(result.rows)
+    })
+    .catch(error => {
+        console.log('Error in GET', error);
+        res.sendStatus(500);
+    })
+})
+
+app.delete('/feedback/:id', (req, res) => {
+    let id = req.params.id;
+    let query = 'DELETE FROM "feedback" WHERE id = $1;';
+    pool.query(query, [id])
+    .then(result => {
+        res.sendStatus(204);
+    })
+    .catch(error => {
+        res.sendStatus(500);
+        console.log('Error in DELTE', error);
+    })
+})
+
 /** ---------- START SERVER ---------- **/
 app.listen(PORT, () => {
     console.log('Listening on port: ', PORT);

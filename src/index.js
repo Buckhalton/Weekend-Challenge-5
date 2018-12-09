@@ -29,6 +29,8 @@ const feedbackData = (state = {feeling: 0, understanding: 0, support: 0, comment
             ...state, 
             comments: action.payload
         };
+        case 'GET_FEEDBACK':
+        return action.payload;
         case 'CLEAR':
         return state = {feeling: 0, understanding: 0, support: 0, comments: ''};
         default:

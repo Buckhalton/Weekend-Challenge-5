@@ -22,7 +22,7 @@ class PageFour extends Component {
       <div className="App">
         <h1>Do you have any additional comments?</h1>
             <input onChange={this.changeState} type="text" placeholder="Any comments?" name="comments"/>
-        <button onClick={this.sendToRedux}><Link to="/thankyou">Finish</Link></button>
+        <button onClick={this.sendToRedux}><Link to="/5">Finish</Link></button>
       </div>
     );
   }
